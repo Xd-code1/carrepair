@@ -1,0 +1,252 @@
+/* ==================================================
+   HEADER
+================================================== */
+
+.site-header {
+    width: 100%;
+}
+
+
+/* ==================================================
+   TOP BAR
+================================================== */
+
+.top-bar {
+    width: 100%;
+    background: #e8ebe4;
+    padding: 18px 0 12px;
+}
+
+.top-inner {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 55px;
+    width: auto;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #4a5c3a;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    color: #7a8a6a;
+    letter-spacing: 1.5px;
+    margin-top: 2px;
+}
+
+
+/* ==================================================
+   SEARCH BOX
+================================================== */
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    width: 170px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-right: none;
+    padding: 0 10px;
+    font-size: 13px;
+    outline: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+    width: 34px;
+    height: 30px;
+    background: #5a6a4a;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+.main-nav {
+    width: 100%;
+    background: #5a6b4a;
+}
+
+.main-nav > ul {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    flex: 1;
+    text-align: center;
+}
+
+.main-nav a {
+    display: block;
+    padding: 14px 2px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav .active > a {
+    background: #4a5b3a;
+}
+
+
+/* ==================================================
+   BOOK APPOINTMENT
+================================================== */
+
+.main-nav .book a {
+    background: transparent;
+    color: #e67e22;
+}
+
+.main-nav .book a:hover {
+    background: transparent;
+    color: #e67e22;
+}
+
+
+/* ==================================================
+   DROPDOWN
+================================================== */
+
+.main-nav .dropdown {
+    position: relative;
+}
+
+.main-nav .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: max-content;
+    min-width: 180px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    background: #e67e22;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s;
+
+    z-index: 1000;
+}
+
+.main-nav .dropdown-menu li {
+    flex: none;
+    width: 100%;
+    text-align: left;
+}
+
+.main-nav .dropdown-menu li a {
+    padding: 12px 15px;
+
+    background: #e67e22;
+    color: #fff;
+
+    font-size: 11px;
+    letter-spacing: 0;
+    text-transform: none;
+
+    white-space: nowrap;
+}
+
+.main-nav .dropdown-menu li a:hover {
+    background: #d35400;
+    color: #fff;
+}
+
+.main-nav .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1000px) {
+
+    .top-inner,
+    .main-nav > ul {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .top-inner {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .main-nav > ul {
+        flex-wrap: wrap;
+    }
+
+    .main-nav li {
+        flex: none;
+        width: 33.33%;
+    }
+
+    .main-nav .dropdown-menu {
+        min-width: 180px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .main-nav li {
+        width: 50%;
+    }
+
+}

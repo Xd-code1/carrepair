@@ -1,0 +1,445 @@
+/* ==================================================
+   CONTACT PAGE
+================================================== */
+
+/*
+    IMPORTANT:
+    The green background belongs to the page/body.
+    The white background belongs ONLY to the 940px
+    contact content area.
+*/
+
+.contact {
+    width: 940px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+
+/* ==================================================
+   CONTACT INNER
+================================================== */
+
+.contact-inner {
+    display: flex;
+
+    width: 940px;
+    min-height: 595px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+}
+
+
+/* ==================================================
+   LEFT COLUMN
+================================================== */
+
+.contact-left {
+    width: 610px;
+
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 55px;
+    padding-left: 40px;
+
+    box-sizing: border-box;
+}
+
+
+.contact-left h1 {
+    margin: 0 0 24px 0;
+
+    color: #666666;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+
+    line-height: 26px;
+}
+
+
+.contact-left > p {
+    width: 525px;
+
+    margin: 0 0 28px 0;
+
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    line-height: 22px;
+}
+
+
+.contact-left > p a {
+    color: #e69a00;
+    text-decoration: none;
+}
+
+
+.contact-left > p a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================================================
+   FORM
+================================================== */
+
+.contact-form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact-form label {
+    display: block;
+
+    margin: 0 0 6px 0;
+
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    line-height: 15px;
+}
+
+
+.contact-form input {
+    display: block;
+
+    width: 405px;
+    height: 27px;
+
+    margin: 0 0 13px 0;
+    padding: 4px 6px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d5d5d5;
+
+    background: #ffffff;
+
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    outline: none;
+}
+
+
+.contact-form input:focus {
+    border-color: #bcbcbc;
+}
+
+
+.contact-form textarea {
+    display: block;
+
+    width: 405px;
+    height: 166px;
+
+    margin: 0;
+    padding: 5px 6px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d5d5d5;
+
+    background: #ffffff;
+
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    resize: none;
+
+    outline: none;
+}
+
+
+.contact-form textarea:focus {
+    border-color: #bcbcbc;
+}
+
+
+/* ==================================================
+   SEND MESSAGE BUTTON
+================================================== */
+
+.contact-form button {
+    position: relative;
+
+    display: block;
+
+    width: 158px;
+    height: 30px;
+
+    margin-top: 20px;
+    margin-left: 13px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: #f4a000;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+
+    line-height: 30px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+
+.contact-form button::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -13px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 13px solid #f4a000;
+}
+
+
+.contact-form button::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: -13px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 13px solid #f4a000;
+}
+
+
+.contact-form button:hover {
+    background: #e89500;
+}
+
+
+.contact-form button:hover::before {
+    border-right-color: #e89500;
+}
+
+
+.contact-form button:hover::after {
+    border-left-color: #e89500;
+}
+
+
+/* ==================================================
+   RIGHT COLUMN
+================================================== */
+
+.contact-right {
+    width: 330px;
+
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   CONTACT IMAGE
+================================================== */
+
+.contact-photo {
+    width: 250px;
+    height: 190px;
+
+    margin: 0 0 21px 0;
+    padding: 5px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dddddd;
+
+    background: #ffffff;
+}
+
+
+.contact-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   CONTACT INFORMATION TITLE
+================================================== */
+
+.contact-right h2 {
+    margin: 0 0 15px 0;
+
+    color: #666666;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+
+    line-height: 22px;
+}
+
+
+/* ==================================================
+   CONTACT INFORMATION
+================================================== */
+
+.contact-info {
+    width: 250px;
+}
+
+
+.contact-info p {
+    margin: 0;
+
+    padding: 0 0 10px 0;
+
+    border-bottom: 1px solid #dddddd;
+
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+    line-height: 21px;
+}
+
+
+.contact-info p + p {
+    padding-top: 8px;
+}
+
+
+.contact-info strong {
+    color: #555555;
+    font-weight: bold;
+}
+
+
+.contact-info a {
+    color: #e69a00;
+    text-decoration: none;
+}
+
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================================================
+   KEEP THE GREEN SIDES
+================================================== */
+
+/*
+    Do NOT put a background colour on <body> here.
+    Your existing header.css controls the page background.
+
+    The 940px white .contact area leaves the green
+    background visible on both sides.
+*/
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 960px) {
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact-inner {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .contact-inner {
+        display: block;
+        min-height: 0;
+    }
+
+    .contact-left {
+        width: 100%;
+        padding-right: 40px;
+    }
+
+    .contact-left > p {
+        width: 100%;
+    }
+
+    .contact-right {
+        width: 100%;
+        padding: 0 40px 50px 40px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .contact-left {
+        padding: 25px 20px 45px 20px;
+    }
+
+    .contact-left > p {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-right {
+        padding: 0 20px 40px 20px;
+    }
+
+    .contact-photo,
+    .contact-info {
+        width: 100%;
+    }
+
+}
